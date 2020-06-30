@@ -1,0 +1,6 @@
+[submodule "hue-lights-controller"]
+	path = hue-lights-controller
+	url = https://github.com/inket/hue-lights-controller.git
+[submodule "nature_remo"]
+	path = nature_remo
+	url = https://github.com/inket/nature_remo.git
