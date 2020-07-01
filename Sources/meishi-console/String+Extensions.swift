@@ -6,7 +6,7 @@ extension String {
         let pipe = Pipe()
         let process = Process()
         process.launchPath = "/bin/sh"
-        process.arguments = ["-c", self]
+        process.arguments = ["-c", "export PATH=/usr/local/bin:$PATH; \(self)"]
         process.standardOutput = pipe
         process.standardError = pipe
 
