@@ -6,9 +6,9 @@
 	<string>jp.mahdi.meishi-console</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>swift</string>
-		<string>run</string>
-		<string>$HOME/meishi-console</string>
+		<string>sh</string>
+		<string>-c</string>
+		<string>$HOME/meishi-console/start.sh</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
