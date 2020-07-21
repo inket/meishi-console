@@ -10,10 +10,10 @@ server.get("/command/{key}") { request in
     else {
         return .init(.notFound, body: "Not found")
     }
-    
-    let output = key.trigger() ?? "No output"
 
-    return .ok(output)
+    KeyBuffer.shared.register(key)
+
+    return .ok("Received key \(key)")
 }
 
 let address = "ipconfig getifaddr en0".run()!.trimmingCharacters(in: .whitespacesAndNewlines)
